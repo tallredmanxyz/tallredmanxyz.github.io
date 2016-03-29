@@ -1,7 +1,210 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+			<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<title>Beats of No Nation</title>
+				<link rel="stylesheet" href="style/style.css" type="text/css"/>
+        </head>
+        <body>
+		
+			<input id="clickScroll" type="checkbox" class="clickScroll"></input>
+			<div class="imageSplash" id="imageSplash">
+				<label for="clickScroll">
+					<i class="fa fa-arrow-circle-o-down">
+				</i>
+			</label>
+			</div>
+			
+			
+			<div id="wrapper" class="wrapper">
+				<div id="banner">
+					<div id="contactDiv">
+						CONTACT
+					</div>
+				</div>
+				<div id="middle">
+					<div id="leftColumn">
+						<img id="logo" src="images/logo.png" height="220" width="250" alt="logo" />
+					</div>
+					<div id="stacks">
+						<div id="thinLogo">
+							<img src="images/logo.png"  height="220" width="250" alt="logo" />
+						</div>
+						<div id="stack4">
+							<ul id="index_cards">
+								<li id="card-1">
+									<button onclick="play(15)">
+										<img src="images/a.jpg"  height="300" width="300" alt="Toucan" /></a>
+									</button>
+								</li>
+								<li id="card-2">
+									<button onclick="play(14)">
+										<img src="images/b.jpg" height="300" width="300" alt="Fox" />
+									</button>
+								</li>
+								<li id="card-3">
+									<button onclick="play(13)">
+										<img src="images/c.jpg"  height="300" width="300" alt="Dog" />
+									</button>
+								</li>
+								<li id="card-4">
+									<button onclick="play(12)">
+										<img src="images/d.jpg"  height="300" width="300" alt="Penguin" />
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div id="stack3">
+							<ul id="index_cards">
+								<li id="card-1">
+									<button onclick="play(11)">
+										<img src="images/e.jpg"  height="300" width="300" alt="Toucan" />
+									</button>
+								</li>
+								<li id="card-2">
+									<button onclick="play(10)">
+										<img src="images/f.jpg"  height="300" width="300" alt="Fox" />
+									</button>
+								</li>
+								<li id="card-3">
+									<button onclick="play(9)">
+										<img src="images/g.jpg"  height="300" width="300" alt="Dog" />
+									</button>
+								</li>
+								<li id="card-4">
+									<button onclick="play(8)">
+										<img src="images/h.jpg" height="300" width="300" alt="Penguin" />
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div id="stack2">
+							<ul id="index_cards">
+								<li id="card-1">
+									<button onclick="play(7)">
+										<img src="images/i.jpg"  height="300" width="300" alt="Toucan" />
+									</button>
+								</li>
+								<li id="card-2">
+									<button onclick="play(6)">
+										<img src="images/a.jpg"  height="300" width="300" alt="Fox" />
+									</button>
+								</li>
+								<li id="card-3">
+									<button onclick="play(5)">
+										<img src="images/k.jpg"  height="300" width="300" alt="Dog" />
+									</button>
+								</li>
+								<li id="card-4">
+									<button onclick="play(4)">
+										<img src="images/l.jpg"  height="300" width="300" alt="Penguin" />
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div id="stack1">
+							<ul id="index_cards">
+								<li id="card-1">
+									<button onclick="play(3)">
+										<img src="images/m.jpg"  height="300" width="300" alt="Toucan" />
+									</button>
+								</li>
+								<li id="card-2">
+									<button onclick="play(2)">
+										<img src="images/n.jpg"  height="300" width="300" alt="Fox" />
+									</button>
+								</li>
+								<li id="card-3">
+									<button onclick="play(1)">
+										<img src="images/o.jpg" height="300" width="300" alt="Dog" />
+									</button>
+								</li>
+								<li id="card-4">
+									<button onclick="play(0)">
+										<img src="images/p.jpg"  height="300" width="300" alt="Penguin" />
+									</button>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div ><!--END middle-->
+
+			</div> <!-- END wrapper -->
+			
+			<div id="testArea">
+				<div id="player"></div>
+			<!--<iframe width="100%" height="60" style="position: relative; display: block; width: 100%; height: 60px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=2708620741/layout=http_3A_2F_2Fdemo.samnabi.com_2Fbcembed5_2Fjsontxt_2Fsamnabi-2015-07-08-121845.txt/bgcol=FFFFFF/linkcol=202020/debug=true/" allowtransparency="true" frameborder="0"></iframe>
+					 http://bandcamp.samnabi.com/ -->
+			</div>
+			
+		
+			<script>
+			window.onload = function () {
+					var element = document.getElementById("imageSplash");
+					if (element.addEventListener) {
+						element.addEventListener("mousewheel", MouseWheelHandler, false);
+						element.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+					} else element.attachEvent("onmousewheel", MouseWheelHandler);
+
+					function MouseWheelHandler(e) {
+						document.getElementById("clickScroll").checked = true;
+						return false;
+					}
+				}	
+
+
+			</script>	
+<script>
+   (function() {
+      var script = document.createElement('script');
+ 
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = 'http://sd.toneden.io/production/toneden.loader.js'
+ 
+      var entry = document.getElementsByTagName('script')[0];
+      entry.parentNode.insertBefore(script, entry);
+   }());
+ 
+   ToneDenReady = window.ToneDenReady || [];
+   ToneDenReady.push(function() {
+      // This is where all the action happens:
+      ToneDen.player.create({
+		skin: "dark",
+		feed: true,
+		shrink: false,
+		mini: true,
+         dom: '#player',
+		
+         urls: [
+             "https://soundcloud.com/neilcic/mouth-sounds",
+			"https://soundcloud.com/dismagazine/nguzunguzu-perfect-lullaby",
+			"https://soundcloud.com/5ystem12/for-any-catatonic-orphans",
+			"https://soundcloud.com/friederd/frieder-d-holiday-mix",
+			"https://soundcloud.com/jamiesawyer/yellow-claw-slow-down-x-swizz",
+			"https://soundcloud.com/dj-mr-sprain/jidenna-ft-roman-gianarthur-classic-man",
+			"https://soundcloud.com/dj-mr-sprain/shaq-boom-shakalaka-remix",
+			"https://soundcloud.com/sean-james/disclosure-ft-sam-smith-latch-dis-latched-sean-james-remix",
+			"https://soundcloud.com/sean-james/where-are-u-now-ft-justin-bieber-bounce-rmx",
+			"https://soundcloud.com/bryan-weltzer/lupit-cueshecover",
+			"https://soundcloud.com/michael-bullis/only-that-real-remix-iamsu-feat-2chains-sage-the-gemini-prod-bullis-beats",
+			"https://soundcloud.com/young-hizzy/im-not-the-only-one-feat-aap-rocky-cd-remix",
+			"https://soundcloud.com/aintnobodymusic/hypnotized",
+			"https://soundcloud.com/danny-off-the-record/pineapple-party-starter",
+			"https://soundcloud.com/aintnobodymusic/aint-nobody",
+			"https://soundcloud.com/theblendchemist/nicki-minaj-i-lied-blend-chemist-commas-remix"
+         ]
+      });
+   });
+	function play(value1){
+	if (value1!=ToneDen.player.getInstanceByDom("#player").getTrack()){
+		ToneDen.player.getInstanceByDom("#player").skipTo(value1, true)
+	}
+	}
+</script>			
+
+
+        </body>
+    </html>
