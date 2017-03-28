@@ -1,60 +1,373 @@
 <!DOCTYPE html>
-<html >
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Tall Red Man</title>
-    
-    
-    
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cantarel'>
+    <title>TallRedMan</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    
-    
-    
-  </head>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body onload="resizeCanvas();">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+<div id="left-border"></div>
+<div id="right-border"></div>
+<div id="top-border"></div>
+<div id="bottom-border"></div>
 
-    <div class="container">
-<div class="row">
-	<div class="col-md-9">
-		<!-- particles.js container -->
-		<div id="particles-js"> </div>
-	</div>
-	<div class="col-md-3 text-right">
-		<h1>tallredman.xyz</h1>
-		<br>
-		<br>
-		<h3><b>ALEX BARNETT<b></h3>
-		<h3>Web Developer </h3>
+<header class="header">
+    <div class="bottom-nav"></div>
 
-		<br>
-		<h3>alex@tallredman.xyz</h3>
-			
-		
-		
-		
-	</div>
-</div>
-</div>
+    <section id="header">
+
+    </section>
+    <div class="color-layer">
+
+    </div>
+    <div class="wrapper">
+        <video loop="" muted="" autoplay="" id="myvideo" poster="img/bg.jpg" class="fullscreen-bg__video">
+            <source src="video/bg.webm" id="videoSource" type="video/webm">
+            <source src="video/bg.mp4" type="video/mp4">
+            <source src="video/bg.ogv" type="video/ogg">
+        </video>
+    </div>
+
+    <div class="mini-menu mini-down arrow next">
+        <div id="arrow">
+            <a class="next"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row circle-row text-center">
+            <div class="col-lg-4 text-center">
+
+                <div class="logo-circle text-center">
+
+                    <div class="logo-text text-center">
+                        <a href="#header"><h1>tallredman.xyz</h1></a>
+                        <br>
+
+                        <div class="my-info">
+
+                            <h3><b>ALEX BARNETT<b></h3>
+                            <h3>Brisbane Developer </h3>
+
+                            <br>
+                            <h3>alex@tallredman.xyz</h3>
+                        </div>
+                        <div class="menu"
+                        ">
+
+                        <a href="#about">About Me</a><br>
+                        <a href="#kook">Kook.io & Wax River </a><br>
+                        <a href="#sidechat">side.chat</a><br>
+                        <a href="#teac">Teac Hack </a><br>
+
+                    </div>
+                    <div class="arrow next large-screen-arrow">
+                        <h1><i class="fa fa-chevron-down" aria-hidden="true"></i></h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</header>
+<!-- Portfolio Grid Section -->
+<section id="about">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-4 about-col">
 
 
-<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!-- stats.js lib -->
-<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-	
+            </div>
 
-		
-		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
-    
-        <script src="js/index.js"></script>
+            <div class="col-lg-8 ">
+                <div class="section-area">
 
-    
-    
-    
-  </body>
+                    <div class="section-info">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1>About Me</h1>
+                            <p>Hey. I'm Alex. I like to make things. I'm a Computer Science & Business Management
+                                student (finishing mid 2017). I like hanging out with creative people, and you'll often
+                                find me at places like <a
+                                        href="http://www.firestation101.com.au" class="link-text"
+                                        target="_blank">Fire Station 101</a>, <a href="http://www.ilabaccelerator.com/"
+                                                                                 class="link-text"
+                                                                                 target="_blankp">iLab</a> & <a
+                                        href="https://ideahub.uq.edu.au" class="link-text"
+                                        target="_blank">IdeaHub</a>. If I'm not at any of those I
+                                might be at a gig, but if I'm not at any venues I might be playing lawn bowls. If you
+                                can't find me at the bowls club then you are probably best shooting me <a
+                                        href="mailto:alex@tallredman.xyz?Subject=Hey%20Alex!" class="link-text"
+                                        target="_top">an e-mail</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section id="kook">
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="kook-col col-lg-4">
+
+
+            </div>
+            <div class="col-lg-8 ">
+                <div class="section-area">
+
+                    <div class="section-info">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1>Wax River</h1>
+                            <p>In early 2016, I teamed up with <a class="link-text"
+                                                                  href="https://www.linkedin.com/in/william-harris-102079127/"
+                                                                  target="_blank">Will Harris</a>
+                                to develop a purchase optimization algorithm that would reduce shipment costs through
+                                bundling. We established the company <a class="link-text" target="_blank"
+                                                                        href="http://kook.io">Kook.io</a> and we were
+                                accepted into iLab's <a class="link-text" target="_blank"
+                                                        href="http://www.ilabaccelerator.com/2016/12/diversityrules/">Accelerator
+                                    program</a> to develop our first product <a
+                                        href="http://www.beta.waxriver.com/" target="_blank" class="link-text">Wax
+                                    River</a>, a shopping platform for lovers of vinyl. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="sidechat">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="sidechat-col col-lg-4">
+
+
+            </div>
+            <div class="col-lg-8 ">
+                <div class="section-area">
+
+                    <div class="section-info">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1>side.chat</h1>
+                            <p>For the course Social & Mobile Computing, I designed a social media concept to address the impact of political 'echo-chambers'.  With the assistance of my group, we developed <a href="http://side.chat" target="_blank" class="link-text">side.chat</a>, a prototype reddit clone that ranks discussions by how balanced they are. Our project was selected for the <a href="http://www.itee.uq.edu.au/innovation-showcase" target="_blank" class="link-text">UQ Innovation Showcase</a>, and I was asked to present it at <a href="https://www.meetup.com/en-AU/Hacks-Hackers-Brisbane/" target="_blank" class="link-text">Hacks/Hackers</a>, a monthly meetup for geeks and journalists.  If you want to know more, check out the <a href="https://github.com/deco3500/sidechat" target="_blank" class="link-text"> Github Repo</a>!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="teac">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="teac-col col-lg-4">
+
+
+            </div>
+            <div class="col-lg-8 ">
+                <div class="section-area">
+
+                    <div class="section-info">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h1>Teac Hack</h1>
+                            <p>This one was a bit of fun. A few years ago I was into DIY videography, but was restricted by my shoestring student budget.  I bought a very cheap Teac audio recorder, and went about hacking it to run a more expensive Tascam recorder's firmware. It was a success, so I published quick <a href="http://tehack.blogspot.com.au/" target="_blank" class="link-text">how-to guide</a> that was later picked up by <a href="http://hackaday.com/2012/11/10/upgrading-a-voice-recorder-with-a-hex-editor/" class="link-text" target="_blank">Hackaday</a>.     </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+
+<script>
+    //this is where we apply opacity to the arrow
+    $(window).scroll(function () {
+
+        //get scroll position
+        var topWindow = $(window).scrollTop();
+        //multipl by 1.5 so the arrow will become transparent half-way up the page
+        var topWindow = topWindow * 1.5;
+
+        //get height of window
+        var windowHeight = $(window).height();
+
+        //set position as percentage of how far the user has scrolled
+        var position = topWindow / windowHeight;
+        //invert the percentage
+        var colorOpacity = position;
+        position = 1 - position;
+
+        //define arrow opacity as based on how far up the page the user has scrolled
+        //no scrolling = 1, half-way up the page = 0
+
+        //Ensures that on scrolling down passed first page, Info will switch to menu in circle
+        if ($(window).height() > topWindow) {
+            $('.my-info').show();
+            $('.menu').hide();
+        } else {
+            $('.my-info').hide();
+            $('.menu').show();
+        }
+
+
+        //For small screens, gets rid of circle and replaces with mini menu passed first page.
+        if ($(window).width() < 1200) {
+            $('.circle-row').css('opacity', position);
+            $('.mini-menu').css('opacity', .5 - position);
+            if (($(window).scrollTop() > $(window).height() * .6) && ($(window).scrollTop() < 4 * $(window).height())) {
+                $('.circle-row').hide();
+                $('.mini-menu').show();
+            } else {
+                $('.circle-row').show();
+                $('.mini-menu').hide();
+            }
+        } else {
+
+            $('.circle-row').show();
+            if($(window).scrollTop() > $(window).height() * .6){
+                $('.logo-circle').css('transform', "rotate(-15deg)");
+            }else{
+                $('.logo-circle').css('transform', "rotate(0deg)");
+
+            }
+            $('.mini-menu').hide();
+            $('.circle-row').css('opacity', 1);
+
+        }
+
+
+    });
+
+    $(document).ready(function () {
+        if ($(window).width() < 1200) {
+
+            if ($(window).scrollTop() > $(window).height() * .6) {
+                $('.circle-row').hide();
+                $('.mini-menu').show();
+            } else {
+                $('.circle-row').show();
+                $('.mini-menu').hide();
+            }
+        } else {
+            $('.circle-row').show();
+            $('.mini-menu').hide();
+            $('.circle-row').css('opacity', 1);
+        }
+    });
+
+    $(window).resize(function () {
+
+        if ($(window).width() < 1200) {
+
+            if ($(window).scrollTop() > $(window).height() * .6) {
+                $('.circle-row').hide();
+                $('.mini-menu').show();
+            } else {
+                $('.circle-row').show();
+                $('.mini-menu').hide();
+            }
+        } else {
+            $('.circle-row').show();
+            $('.mini-menu').hide();
+            $('.circle-row').css('opacity', 1);
+        }
+    });
+
+
+    //Code stolen from css-tricks for smooth scrolling:
+    $('a[href^="#"]').on('click', function (event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+
+
+    $(function () {
+
+        var pagePosition = 0,
+            sectionsSelector = 'section',
+            $scrollItems = $(sectionsSelector),
+            offsetTolorence = 30,
+            pageMaxPosition = $scrollItems.length - 1;
+
+        //Map the sections:
+        $scrollItems.each(function (index, ele) {
+            $(ele).attr("debog", index).data("pos", index);
+        });
+
+        // Bind to scroll
+        $(window).bind('scroll', upPos);
+
+        //Move on click:
+        $('.arrow').click(function (e) {
+            console.log(pagePosition);
+            if ($(this).hasClass('next') && pagePosition + 1 <= pageMaxPosition) {
+                pagePosition++;
+                $('html, body').stop().animate({
+                    scrollTop: $scrollItems.eq(pagePosition).offset().top
+                }, 1000);
+            }
+            if ($(this).hasClass('previous') && pagePosition - 1 >= 0) {
+                pagePosition--;
+                $('html, body').stop().animate({
+                    scrollTop: $scrollItems.eq(pagePosition).offset().top
+                }, 1000);
+            }
+        });
+
+        //Update position func:
+        function upPos() {
+            var fromTop = $(this).scrollTop();
+            var $cur = null;
+            $scrollItems.each(function (index, ele) {
+                if ($(ele).offset().top < fromTop + offsetTolorence) $cur = $(ele);
+            });
+            if ($cur != null && pagePosition != $cur.data('pos')) {
+                pagePosition = $cur.data('pos');
+            }
+        }
+
+    });
+</script>
 </html>
