@@ -149,20 +149,6 @@ a{
 
 }
 
-.circle-point{
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    margin: -200px 0 0 -200px;
-    width: 400px;
-    height: 400px;
-    background: #F44336;
-    transition: all .5s ;
-
-}
-
 .logo-circle{
     font-family: 'Montserrat', sans-serif !important;
     bottom: 10vh;
@@ -243,10 +229,13 @@ a{
 }
 @media screen and (max-width: 640px),screen and (max-height: 900px){
     .section-info{
-        font-size: 25px;
+        font-size: 20px;
     }
     .section-info h1{
-        font-size: 29px;
+        font-size: 24px;
+    }
+    .logo-circle{
+        background: none;
     }
 }
 
